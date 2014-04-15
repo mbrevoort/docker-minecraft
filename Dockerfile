@@ -36,9 +36,9 @@ add    ./supervisor/conf.d/minecraft.conf /etc/supervisor/conf.d/minecraft.conf
 add    ./minecraft/ops.txt /usr/local/etc/minecraft/ops.txt
 add    ./minecraft/white-list.txt /usr/local/etc/minecraft/white-list.txt
 add    ./minecraft/server.properties /usr/local/etc/minecraft/server.properties
-add    ./minecraft/minecraft_server.1.7.4.jar /usr/local/etc/minecraft/minecraft_server.jar
+add    ./minecraft/minecraft_server.1.6.4.jar /usr/local/etc/minecraft/minecraft_server.jar
+add    ./minecraft/forge-1.6.4-9.11.1.965-installer.jar /usr/local/etc/minecraft/minecraft_forge-installer.jar
 add    ./scripts/start /start
-
 
 # Fix all permissions
 run	   chmod +x /start

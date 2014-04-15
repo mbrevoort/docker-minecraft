@@ -1,6 +1,9 @@
 #!/bin/bash
 
 cp /usr/local/etc/minecraft/minecraft_server.jar /data/
+cp /usr/local/etc/minecraft/minecraft_forge-installer.jar /data/
+
+cd /data/ && java -jar minecraft_forge-installer.jar  --installServer && mv minecraftforge*.jar minecraftforge.jar
 
 if [ ! -f /data/opts.txt ]
 then
